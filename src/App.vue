@@ -1,37 +1,18 @@
 <template>
   <navBar></navBar>
-  <div class="socialMedia">
-    <ul>
-      <li>
-        <a href="https://github.com/jperosa97"> 
-          <fa class="icon" :icon="['fab', 'github']"/>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/perosa-janick-665a49190/"> 
-          <fa class="icon" :icon="['fab', 'linkedin']"/>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/mr_perosa/">
-          <fa class="icon" :icon="['fab', 'instagram']"/>
-        </a>
-        <hr>
-      </li> 
-      
-    </ul>
-   
-  </div>
+  <sideBarMedie></sideBarMedie>
 </template>
 
 <script>
 // @ is an alias to /src
 import NavBar from '@/components/NavBar.vue'
+import SideBarMedie from '@/components/SideBarMedie.vue'
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
+    SideBarMedie 
   }
 }
 </script>
@@ -40,29 +21,5 @@ export default {
 body {
   background-color: #1A191C;
 }
-.socialMedia {
-  font-size: 50px;
-}
-.socialMedia ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 25vh;
-  list-style: none;
-  position: fixed;
-  bottom: 75px;
-  left: 50px;
-}
-.socialMedia ul li a {
-  color: #FBFBFA;
-}
-.socialMedia ul li a:hover{
-  color: #42b983;
-}
-.socialMedia ul li hr {
-  border: none;
-  border-left: 2px solid #FBFBFA;
-  height: 174px;
-  width: 1px; 
-}
+
 </style>
