@@ -1,7 +1,8 @@
-<template><div class="profilBild">
+<template><div class="home">
+    <div class="profilBild">
       <img src="../assets/portfoliofoto.jpg" alt="">
       </div>
-    <section class="home">
+    
       
       <div class="titel">
         <fa class="icon" icon="user" /><h1>Über mich</h1> <hr>
@@ -63,8 +64,8 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="service">
+      </div>
+    <div class="service">
       <div class="titel">
         <h1>Was kann ich anbieten / Service</h1>
       </div>
@@ -94,12 +95,10 @@
           </p>
         </li>
       </ul>
-    </section>  
+    </div>  
 </template>
 
 <script>
-// @ is an alias to /src
-
 
 export default {
   name: 'Home',
@@ -111,22 +110,23 @@ export default {
 
 <style scoped>
 .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: -15em;
-    margin-top: -40em;
-    height: 140vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: -7em;
+  margin-top: -19em;
+  height: 120vh;
 }
 .profilBild {
-    display: flex;
-    position: relative;
-    justify-content: right;
-    width: 96vw;
-    align-items: flex-end;
-    height: 53vh;
-    left: -3em;
+  display: flex;
+  justify-content: right;
+  width: 96vw;
+  position: relative;
+  align-items: flex-end;
+  height: 53vh;
+  left: 10px;
+  top: 22em;
 }
 .profilBild  img{
   width: 265px;
@@ -189,10 +189,11 @@ export default {
   font-size: 15px;
 }
 .service {
-    height: 65vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .service .titel {
   display: flex;

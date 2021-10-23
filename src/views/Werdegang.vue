@@ -32,7 +32,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 95vh;
+  height: 89vh;
 }
 .werdegang {
   display: flex;
@@ -51,11 +51,11 @@ export default {
   width: 25vw;
 }
 .container p {
-    width: 332px;
+  width: 332px;
   text-align: initial;
   position: relative;
-      top: -9em;
-    left: -15em;
-    color: white;
+  top: -9em;
+  left: -15em;
+  color: white;
 }
 </style>

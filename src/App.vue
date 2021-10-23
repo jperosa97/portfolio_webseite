@@ -18,6 +18,7 @@ export default {
 </script>
 
 <style>
+
 body {
   font-family: 'Roboto Mono', monospace;
   background-color: #1A191C;
