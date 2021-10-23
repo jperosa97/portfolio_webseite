@@ -1,9 +1,8 @@
-<template>
-  <div class="home">
-    <section>
-      <div class="profilBild">
+<template><div class="profilBild">
       <img src="../assets/portfoliofoto.jpg" alt="">
       </div>
+    <section class="home">
+      
       <div class="titel">
         <fa class="icon" icon="user" /><h1>Über mich</h1> <hr>
       </div>
@@ -96,7 +95,6 @@
         </li>
       </ul>
     </section>  
-  </div>
 </template>
 
 <script>
@@ -112,61 +110,66 @@ export default {
 </script>
 
 <style scoped>
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: -15em;
-  height: 95vh;
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -15em;
+    margin-top: -40em;
+    height: 140vh;
 }
-section .profilBild {
-  position: absolute;
-  left: 70em;
-  top: 13em;
+.profilBild {
+    display: flex;
+    position: relative;
+    justify-content: right;
+    width: 96vw;
+    align-items: flex-end;
+    height: 53vh;
+    left: -3em;
 }
-section .profilBild  img{
+.profilBild  img{
   width: 265px;
   object-fit: cover;
   height: 265px;
   border-radius: 10px;
 }
-section .titel {
+.home  .titel {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 50vw;
 }
-section .titel .icon {
+.home  .titel .icon {
   color: #42b983;
   font-size: 40px;
 }
-section .titel h1 {
+.home .titel h1 {
   margin-left: 2em;
 }
-section .titel hr {
+.home  .titel hr {
   width: 25vw;
 }
-section .beschreibung{
+.home .beschreibung{
   width: 50vw;
   text-align: initial;
 }
-section .programmierSprache ul {
+.home  .programmierSprache ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 25vh;
 }
-section .programmierSprache ul li {
+.home .programmierSprache ul li {
   display: flex;
 }
-section .programmierSprache ul li .content {
+.home .programmierSprache ul li .content {
   display: flex;
   justify-content: space-around;
   width: 50vw;
   margin-left: -72px;
 }
-section .programmierSprache ul li .test {
+.home .programmierSprache ul li .test {
   display: flex;
   align-items: center;
   border: solid 1px #FBFBFA;
@@ -175,15 +178,21 @@ section .programmierSprache ul li .test {
   width: 160px;
   justify-content: space-evenly;
 }
-section .programmierSprache ul li .test:hover {
+.home .programmierSprache ul li .test:hover {
   color: #42b983;
   border-color: #42b983;
 }
-section .programmierSprache ul li .icon {
+.home .programmierSprache ul li .icon {
   font-size: 30px;
 }
-section .programmierSprache ul li .test h1 {
+.home .programmierSprache ul li .test h1 {
   font-size: 15px;
+}
+.service {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .service .titel {
   display: flex;
@@ -194,7 +203,7 @@ section .programmierSprache ul li .test h1 {
   list-style: none;
   justify-content: space-between;
   width: 75vw;
-  margin-left: 20em;
+  margin-left: 12em;
 }
 .service #service li {
   border: 1px solid #25251D;

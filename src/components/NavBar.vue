@@ -1,13 +1,13 @@
 <template>
   <div id="nav">
-  <img alt="Vue logo" src="../assets/logo.png">
-  <ul>
-    <li><router-link to="/">
-    <fa icon="user" /> Über mich</router-link></li>
-    <li><router-link to="/werdegang"><fa icon="suitcase"/> Werdegang</router-link></li>
-    <li><router-link to="/projekt"> <fa icon="code"/> Projekte</router-link></li>
-    <li><router-link to="/kontakt"><fa icon="envelope"/> Kontakt</router-link></li>
-  </ul>
+    <img alt="Vue logo" src="../assets/logo.png">
+    <ul>
+      <li><router-link to="/">
+      <fa icon="user" /> Über mich</router-link></li>
+      <li><router-link to="/werdegang"><fa icon="suitcase"/> Werdegang</router-link></li>
+      <li><router-link to="/projekt"> <fa icon="code"/> Projekte</router-link></li>
+      <li><router-link to="/kontakt"><fa icon="envelope"/> Kontakt</router-link></li>
+    </ul>
   </div>
   <router-view/>
 </template>
@@ -46,5 +46,6 @@
     width: 90px;
     left: 60px;
     position: relative;
+    top: 1em;
 }
 </style>
