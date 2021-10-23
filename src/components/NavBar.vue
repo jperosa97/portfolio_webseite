@@ -13,8 +13,9 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+ 
   text-align: center;
   color: #FBFBFA;
 }
@@ -35,6 +36,7 @@
   font-weight: bold;
   color: #FBFBFA;
    text-decoration: none;
+   font-size: 17px;
 }
 
 #nav a.router-link-exact-active {

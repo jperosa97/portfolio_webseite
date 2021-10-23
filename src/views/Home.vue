@@ -66,12 +66,12 @@
       </div>
     </section>
     <section class="service">
-    <div class="titel">
-      <h1>Was kann ich anbieten / Service</h1>
-    </div>
-      <ul> 
+      <div class="titel">
+        <h1>Was kann ich anbieten / Service</h1>
+      </div>
+      <ul id="service"> 
         <li>
-          <img src="" alt="">
+          <fa class="icon" :icon="['fa', 'code']"/>
           <h1>Frontend Developer</h1>
           <p>
             Konvertieren von Daten in eine grafische Oberfläche mithilfe von HTML, CSS und Javascript, 
@@ -79,7 +79,7 @@
           </p>
         </li>
         <li>
-          <img src="" alt="">
+          <fa class="icon" :icon="['fa', 'database']"/>
           <h1>Backend development</h1>
           <p>
             Entwicklung der Serverseite, die für das Speichern und Organisieren von Daten einer Anwendung und für alles, 
@@ -87,7 +87,7 @@
           </p>
         </li>
         <li>
-          <img src="" alt="">
+          <fa class="icon" :icon="['fa', 'window-maximize']"/>
           <h1>Website Managment</h1>
           <p>
             Verwaltung aller Aktivitäten, die im Prozess der Veröffentlichung und Pflege einer Website im World Wide Web enthalten sind. 
@@ -118,7 +118,7 @@ section {
   align-items: center;
   justify-content: center;
   margin-left: -15em;
-  height: 85vh;
+  height: 95vh;
 }
 section .profilBild {
   position: absolute;
@@ -184,5 +184,42 @@ section .programmierSprache ul li .icon {
 }
 section .programmierSprache ul li .test h1 {
   font-size: 15px;
+}
+.service .titel {
+  display: flex;
+  justify-content: center;
+}
+.service #service {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 75vw;
+  margin-left: 20em;
+}
+.service #service li {
+  border: 1px solid #25251D;
+  background-color: #25251D;
+  width: 350px;
+  height: 410px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service #service li .icon {
+  font-size: 75px;
+  color: #42b983;
+  position: relative;
+  top: 40px;
+}
+.service #service li h1 {
+  position: relative;
+  top: 2em;
+}
+.service #service li p {
+  width: 332px;
+  text-align: initial;
+  position: relative;
+  top: 4em;
 }
 </style>
