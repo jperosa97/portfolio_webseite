@@ -2,8 +2,6 @@
     <div class="profilBild">
       <img src="../assets/portfoliofoto.jpg" alt="">
       </div>
-    
-      
       <div class="titel">
         <fa class="icon" icon="user" /><h1>Über mich</h1> <hr>
       </div>
@@ -115,7 +113,7 @@ export default {
   align-items: center;
   justify-content: flex-end;
   margin-left: -7em;
-  margin-top: -19em;
+  margin-top: -21em;
   height: 120vh;
 }
 .profilBild {

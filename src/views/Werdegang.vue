@@ -56,6 +56,5 @@ export default {
   position: relative;
   top: -9em;
   left: -15em;
-  color: white;
 }
 </style>
