@@ -205,6 +205,7 @@ section .programmierSprache ul li .test h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 .service #service li .icon {
   font-size: 75px;
@@ -217,9 +218,9 @@ section .programmierSprache ul li .test h1 {
   top: 2em;
 }
 .service #service li p {
-  width: 332px;
-  text-align: initial;
-  position: relative;
-  top: 4em;
+    width: 332px;
+    text-align: initial;
+    position: relative;
+    left: 0;
 }
 </style>
