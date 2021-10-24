@@ -1,6 +1,6 @@
 <template>
     <n-card style="margin-bottom: 16px; color: red;">
-        <n-tabs type="line">
+        <n-tabs type="bar">
             <n-tab-pane class="color" name="effingermedien" tab="Effingermedien" style=" color: #FBFBFA;">
                 <h1>Maschinenführer
                    <small>01.2020 - 06.2020</small> 
@@ -29,13 +29,13 @@
                 
             </n-tab-pane>
             <n-tab-pane class="color" name="Rekrutenschule" tab="Rekrutenschule" style=" color: #FBFBFA;">
-                <h1>Maschinenführer
+                <h1>Rekrutenschule
                     <small>07.2017 – 11.2017</small>
                 </h1>
-                <p>Nachschubsoldat</p> 
+                <p>Nachschubsoldat, Fribourg</p> 
             </n-tab-pane>
             <n-tab-pane name="druck" tab="Sprüngli Druck" style=" color: #FBFBFA;">
-                 <h1>Maschinenführer Lehre
+                 <h1>Lehre Maschinenführer 
                     <small>08.2014 - 07.2017</small>
                 </h1>     
                 <p>Sicherstellen der Kundenaufrträge, Einrichten, Produktion und Überwachung der Produktionsanlagen.</p>       

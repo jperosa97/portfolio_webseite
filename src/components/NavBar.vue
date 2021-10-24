@@ -6,7 +6,6 @@
       <fa icon="user" /> Über mich</router-link></li>
       <li><router-link to="/werdegang"><fa icon="suitcase"/> Werdegang</router-link></li>
       <li><router-link to="/projekt"> <fa icon="code"/> Projekte</router-link></li>
-      <li><router-link to="/kontakt"><fa icon="envelope"/> Kontakt</router-link></li>
     </ul>
   </div>
   <router-view/>

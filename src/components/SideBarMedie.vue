@@ -2,7 +2,7 @@
   <div class="socialMedia">
     <ul>
       <li>
-        <a href="https://github.com/jperosa97"> 
+        <a href="https://github.com/jperosa97">
           <fa class="icon" :icon="['fab', 'github']"/>
         </a>
       </li>
@@ -15,6 +15,13 @@
         <a href="https://www.instagram.com/mr_perosa/">
           <fa class="icon" :icon="['fab', 'instagram']"/>
         </a>
+        
+      </li>
+      <li>
+       <a href="mailto:janick.perosa97@hotmail.com">
+          <fa class="icon" :icon="['fa', 'envelope']"/>
+        </a>
+      
         <hr>
       </li> 
       
@@ -39,6 +46,9 @@ body {
   position: fixed;
   bottom: 75px;
   left: 50px;
+}
+.socialMedia ul li {
+  font-size: 40px;
 }
 .socialMedia ul li a {
   color: #FBFBFA;

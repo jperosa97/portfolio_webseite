@@ -102,7 +102,7 @@
   align-items: center;
   top: 110px;
   left: -10em;
-  box-shadow: 15px -28px 25px #1a191c;
+  box-shadow: -20px -20px 25px #1a191c;
 }
 .containerProjekt .projektImg li .containerRechts h1 {
   font-size: 25px;
