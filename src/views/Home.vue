@@ -70,7 +70,7 @@
       </div>
       <ul id="service"> 
         <li>
-          <fa class="icon" :icon="['fa', 'code']"/>
+          <fa class="icon" :icon="['fa', 'window-maximize']"/>
           <h1>Frontend Developer</h1>
           <p>
             Konvertieren von Daten in eine grafische Oberfläche mithilfe von HTML, CSS und Javascript, 
@@ -86,7 +86,7 @@
           </p>
         </li>
         <li>
-          <fa class="icon" :icon="['fa', 'window-maximize']"/>
+          <fa class="icon" :icon="['fa', 'edit']"/>
           <h1>Website Managment</h1>
           <p>
             Verwaltung aller Aktivitäten, die im Prozess der Veröffentlichung und Pflege einer Website im World Wide Web enthalten sind. 
@@ -150,6 +150,7 @@ export default {
   width: 25vw;
 }
 .home .beschreibung{
+  font-size: 15px;
   width: 50vw;
   text-align: initial;
 }
@@ -216,20 +217,24 @@ export default {
   align-items: center;
   justify-content: space-around;
 }
+.service #service li:hover{
+box-shadow: 0 0.5em 0.5em -0.4em #25251D;
+transform: translateY(-0.25em);
+}
 .service #service li .icon {
-  font-size: 75px;
-  color: #42b983;
-  position: relative;
-  top: 40px;
+    font-size: 65px;
+    color: #42b983;
+    position: relative;
+    top: 30px;
 }
 .service #service li h1 {
-  position: relative;
-  top: 2em;
+  top: 10px;
+  font-size: 25px;
 }
 .service #service li p {
-    width: 332px;
-    text-align: initial;
-    position: relative;
-    left: 0;
+  width: 332px;
+  position: relative;
+  left: 0;
+  top: -28px;
 }
 </style>

@@ -9,7 +9,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { faSymfony, faJsSquare, faAngular, faPhp, faHtml5, faLaravel, faVuejs, faNode, faWordpress, faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
-library.add(fas, faSymfony, faJsSquare, faAngular, faPhp, faHtml5, faLaravel, faVuejs, faNode, faWordpress, faGithub, faLinkedin, faInstagram)
+library.add(fas, faSymfony, faJsSquare, faAngular, faPhp, faHtml5, faLaravel, faVuejs, faNode, faWordpress, faGithub, faLinkedin, faInstagram )
 
 createApp(App)
 .component('fa', FontAwesomeIcon)

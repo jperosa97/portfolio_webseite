@@ -4,10 +4,11 @@
         <fa class="icon" icon="code" /> 
         <h1>Projekt</h1> <hr>
       </div> 
-      <p>Ich präsentiere Projekte, die ich gemacht habe, einige Projekte sind für den öffentlichen Gebrauch gemacht und einige sind Private Projekte.</p>
+      <p>Ich präsentiere Projekte, die ich gemacht habe, einige Projekte sind für den öffentlichen Gebrauch 
+        gemacht und einige sind Private Projekte.
+      </p>
   </div>
   <projekteImg></projekteImg>
-
 </template>
 <script>
 import ProjekteImg from '@/components/ProjekteImg.vue'
@@ -45,9 +46,9 @@ export default {
   width: 25vw;
 }
 .containerTitel  p {
-  width: 332px;
+  width: 380px;
   text-align: initial;
   position: relative;
-  left: -15em;
+  left: -12em;
 }
 </style>

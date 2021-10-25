@@ -37,7 +37,9 @@
    text-decoration: none;
    font-size: 17px;
 }
-
+#nav ul li a:hover{
+  color: #42b983;
+}
 #nav a.router-link-exact-active {
   color: #42b983;
 }

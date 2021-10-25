@@ -154,4 +154,7 @@
   color: #FBFBFA;
   display: flex;
 }
+.containerProjekt .projektImg .icon:hover{
+  color: #42b983;
+}
 </style>

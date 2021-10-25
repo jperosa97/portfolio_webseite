@@ -49,9 +49,9 @@ export default {
   width: 25vw;
 }
 .container p {
-    width: 332px;
-    text-align: initial;
-    position: relative;
-    left: -15em;
+  width: 380px;
+  text-align: initial;
+  position: relative;
+  left: -12em;
 }
 </style>
