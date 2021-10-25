@@ -2,6 +2,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import naive from "naive-ui";
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -11,4 +13,4 @@ library.add(fas, faSymfony, faJsSquare, faAngular, faPhp, faHtml5, faLaravel, fa
 
 createApp(App)
 .component('fa', FontAwesomeIcon)
-.use(router).use(naive).mount('#app')
+.use(router).use(naive).use(ElementPlus).mount('#app')
