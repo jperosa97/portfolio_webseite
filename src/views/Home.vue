@@ -1,27 +1,28 @@
-<template><div class="home">
+<template>
+  <div class="home">
     <div class="profilBild">
       <img src="../assets/portfoliofoto.jpg" alt="">
-      </div>
-      <div class="titel">
-        <fa class="icon" icon="user" /><h1>Über mich</h1> <hr>
-      </div>
-      <div class="beschreibung">
-        <p>Hallo ich bin Janick Perosa und ein Webdeveloper </p>
-        <p> Ich mag es Dinge zu erstellen die im Internet leben, sei es Websites, Anwendungen oder irgendetwas dazwischen. 
-          Mein Ziel ist es, bei jeder Gelegenheit mitzumachen oder zu arbeiten, die mir hilft, meine Fähigkeiten und Kenntnisse zu
-          erweitern und zu verbessern. Ich freue mich über herausfordernde Projekte und arbeite gerne mit
-          allen möglichen Persönlichkeiten. 
-        </p> 
-        <p> 
-          Nach meinem Abschluss an der SAE Institute in 
-          Zürich als Webdesign & Development, suche ich eine stelle als Webdeveloper. Dort möchte ich an Vielzahl von 
-          faszinierende Technologien und hilfreiche Projekte mit arbeiten. 
-        </p> 
-        <p> Hier sind einige Technologien, mit denen ich in letzter Zeit gearbeitet habe: </p>
-      </div>
-      <div class="programmierSprache">
-        <ul>
-          <li>
+    </div>
+    <div class="titel">
+      <fa class="icon" icon="user" /><h1>Über mich</h1> <hr>
+    </div>
+    <div class="beschreibung">
+      <p>Hallo ich bin Janick Perosa und ein Webdeveloper </p>
+      <p> Ich mag es Dinge zu erstellen die im Internet leben, sei es Websites, Anwendungen oder irgendetwas dazwischen. 
+        Mein Ziel ist es, bei jeder Gelegenheit mitzumachen oder zu arbeiten, die mir hilft, meine Fähigkeiten und Kenntnisse zu
+        erweitern und zu verbessern. Ich freue mich über herausfordernde Projekte und arbeite gerne mit
+        allen möglichen Persönlichkeiten. 
+      </p> 
+      <p> 
+        Nach meinem Abschluss an der SAE Institute in 
+        Zürich als Webdesign & Development, suche ich eine stelle als Webdeveloper. Dort möchte ich an Vielzahl von 
+        faszinierende Technologien und hilfreiche Projekte mit arbeiten. 
+      </p> 
+      <p> Hier sind einige Technologien, mit denen ich in letzter Zeit gearbeitet habe: </p>
+    </div>
+    <div class="programmierSprache">
+      <ul>
+        <li>
           <div class="content">
             <div class="test">
               <fa class="icon" :icon="['fab', 'html5']"/> <h1>HTML & CSS</h1>

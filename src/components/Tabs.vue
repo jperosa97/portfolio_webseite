@@ -1,5 +1,5 @@
 <template>
-    <el-tabs :tab-position="tabPosition" style="height: 250px">
+    <el-tabs :tab-position="tabPosition" style="height: 250px;">
         <el-tab-pane label="Effingermedien">
             <h1>Maschinenführer
                 <small>01.2020 - 06.2020</small> 
@@ -49,14 +49,25 @@ export default {
 
 <style>
 .tab {
-    position: relative;
-    top: -15em;
+    display: flex;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
 }
-.n-card.n-card--bordered{
-  background-color: #1A191C;
- 
+.el-tabs__item:hover{
+    color: #42b983 !important;
 }
-.n-tabs.n-tabs--line-type .n-tabs-tab, .n-tabs.n-tabs--bar-type .n-tabs-tab {
-    color: #FBFBFA;
+.el-tabs__item.is-active{
+    color: #42b983 !important;
 }
+.el-tabs__item{
+    color: #FBFBFA  !important;
+    font-size: 17px !important;
+}
+.el-tabs--left .el-tabs__active-bar.is-left{
+    background-color: #42b983;
+}
+.el-tabs__content{
+    width: 45vw;
+    }
 </style>

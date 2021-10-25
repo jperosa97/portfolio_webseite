@@ -25,21 +25,21 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  height: 25vh;
+  justify-content: center;
+  height: 45vh;
 }
 .containerTitel .projekt{
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   width: 50vw;
+  font-size: 20px;
 }
 .containerTitel .projekt .icon {
   color: #42b983;
   font-size: 40px;
 }
 .containerTitel .projekt h1 {
-  margin-left: 2em;
+  margin-left: 1em;
 }
 .containerTitel .projekt hr {
   width: 25vw;
