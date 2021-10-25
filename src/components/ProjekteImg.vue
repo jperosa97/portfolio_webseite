@@ -80,13 +80,21 @@
 
 <style>
  .containerProjekt .projektImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 255vh;
 }
 .containerProjekt .projektImg li {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .containerProjekt .projektImg li .containerRechts{
@@ -97,9 +105,16 @@
   position: relative;
   border-radius: 10px;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 110px;
   left: -10em;
   box-shadow: -20px -20px 25px #1a191c;
@@ -108,9 +123,16 @@
   font-size: 25px;
 }
 .containerProjekt .projektImg li .containerRechts p {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 32vw;
   margin: 15px;
 }
@@ -122,9 +144,16 @@
   position: relative;
   border-radius: 10px;
   text-align: initial;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   left: 200px;
   top: 110px;
   box-shadow: 15px 20px 25px #1A191C;
@@ -133,25 +162,40 @@
   font-size: 25px;
 }
 .containerProjekt .projektImg li .containerLinks p {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 32vw;
 }
 .containerProjekt .projektImg .imgLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 50vw;
+  height: 50vh;
   border-radius: 10px;
 }
 .containerProjekt .projektImg .imgRechts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 50vw;
+  height: 50vh;
   margin-left: 200px;
   border-radius: 10px;
 }
 .containerProjekt .projektImg .icon {
   font-size: 30px;
   color: #FBFBFA;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .containerProjekt .projektImg .icon:hover{

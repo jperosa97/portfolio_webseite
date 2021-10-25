@@ -19,23 +19,32 @@
   color: #FBFBFA;
 }
 #nav{
-   display: flex;
-    justify-content: space-between;
-    width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90vw;
 }
 #nav ul {
-    display: flex;
-    justify-content: space-around;
-    width: 35vw;
-    align-items: center;
-    float: right;
-    list-style: none; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 35vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: right;
+  list-style: none; 
 }
 #nav ul li a {
   font-weight: bold;
   color: #FBFBFA;
-   text-decoration: none;
-   font-size: 17px;
+  text-decoration: none;
+  font-size: 17px;
 }
 #nav ul li a:hover{
   color: #42b983;
@@ -44,9 +53,10 @@
   color: #42b983;
 }
 #nav img {
-    width: 90px;
-    left: 60px;
-    position: relative;
-    top: 1em;
+  width: 90px;
+  height: 90px;
+  left: 60px;
+  position: relative;
+  top: 1em;
 }
 </style>

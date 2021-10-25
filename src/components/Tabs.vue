@@ -49,10 +49,16 @@ export default {
 
 <style>
 .tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 40vh;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .el-tabs__item:hover{
     color: #42b983 !important;
@@ -69,5 +75,5 @@ export default {
 }
 .el-tabs__content{
     width: 45vw;
-    }
+}
 </style>
