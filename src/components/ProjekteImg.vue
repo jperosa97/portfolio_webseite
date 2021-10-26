@@ -81,7 +81,48 @@
         </div>
       </div>
       </li>
-   
+    <li id="box05">
+     <div class="containerAnim05">
+      <div class="containerLinks">
+        <h1>Wordpress Webseite</h1>
+        <p>
+          Diese Webseite habe für einen Kollegen mittels Wordpress erstellt und diese ist auch Online. 
+          Besuchen Sie die Webseite.
+        </p>
+        <n-space>
+          <n-tag type="success">Wordpress</n-tag>
+          <n-tag type="success">Theme</n-tag>
+          <n-tag type="success">Frontend</n-tag>
+          <a href="https://beni-gaertner.ch/"> 
+            <fa class="icon" :icon="['fa', 'globe']"/>
+          </a>
+        </n-space>
+        </div>
+        <img class="imgLinks" src="../assets/projektImg/5.png" alt="Wordpress ">
+        </div>
+      </li>
+      <li id="box06">
+            <div  class="containerAnim06">
+        <img class="imgRechts" src="../assets/projektImg/6.png" alt="JS">
+         <div class="containerRechts">
+        <h1>JS Gsap</h1>
+        <p>
+          Mithilfe von Gsap animation, habe ich eine Animation gemacht, wo man eine Banneranimation mit 
+          einer Nintendo Switch sieht.
+        </p>
+        <n-space>
+          <n-tag type="success">JS</n-tag>
+          <n-tag type="success">Gsap</n-tag>
+          <n-tag type="success">HTML & CSS</n-tag>
+          <a  href="https://github.com/jperosa97/Javascript_GSAP_Animation"> 
+            <fa class="icon" :icon="['fab', 'github']"/>
+          </a>
+        </n-space>
+        
+        </div>
+      </div>
+      
+      </li>
    </ul>
   </div>
 </template>
@@ -134,6 +175,22 @@ export default {
         }
       })
       timeLine04.from('.containerAnim04', { y: 300, });
+     
+     let timeLine05 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#box05",
+          start: "top center"
+        }
+      })
+      timeLine05.from('.containerAnim05', { y: 300, });
+    
+      let timeLine06 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#box06",
+          start: "top center"
+        }
+      })
+      timeLine06.from('.containerAnim06', { y: 300, });
     }
   },
 }
@@ -150,7 +207,7 @@ export default {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 255vh;
+  height: 380vh;
 }
 .containerAnim01{
   display: flex;
@@ -163,6 +220,13 @@ export default {
   display: flex;
 }
 .containerAnim04{
+  display: flex;
+  width: 0;
+}
+.containerAnim05 {
+  display: flex;
+}
+.containerAnim06{
   display: flex;
   width: 0;
 }
