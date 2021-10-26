@@ -2,15 +2,36 @@
   <div id="nav">
     <img alt="Vue logo" src="../assets/logo.png">
     <ul>
-      <li><router-link to="/">
+      <li class="nav01"><router-link to="/">
       <fa icon="user" /> Über mich</router-link></li>
-      <li><router-link to="/werdegang"><fa icon="suitcase"/> Werdegang</router-link></li>
-      <li><router-link to="/projekt"> <fa icon="code"/> Projekte</router-link></li>
+      <li class="nav02"><router-link to="/werdegang"><fa icon="suitcase"/> Werdegang</router-link></li>
+      <li class="nav03"><router-link to="/projekt"> <fa icon="code"/> Projekte</router-link></li>
     </ul>
   </div>
   <router-view/>
 </template>
+<script>
+import {gsap} from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+export default {
+  mounted() {
+    this.startAnimation()    
+  },  
+  methods: {
+    startAnimation: function(){  
+       gsap.registerPlugin(ScrollTrigger);  
+        gsap.defaults({
+          duration: 2,
+          opacity: 0
+      })
+      gsap.from('.nav01', {y: -200}, "+=0.25");
+      gsap.from('.nav02', {y: -200}, "-=1");
+      gsap.from('.nav03', {y: -200}, "-=1");
+  },
 
+  }
+}
+</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 

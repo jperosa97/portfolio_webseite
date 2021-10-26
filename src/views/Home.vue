@@ -21,7 +21,7 @@
       <p> Hier sind einige Technologien, mit denen ich in letzter Zeit gearbeitet habe: </p>
     </div>
     <div class="programmierSprache">
-      <ul>
+      <ul id="programmierBox">
         <li>
           <div class="content">
             <div class="test">
@@ -69,7 +69,7 @@
         <h1>Was kann ich anbieten / Service</h1>
       </div>
       <ul id="service"> 
-        <li>
+        <li class="frontend">
           <fa class="icon" :icon="['fa', 'window-maximize']"/>
           <h1>Frontend Developer</h1>
           <p>
@@ -77,7 +77,7 @@
             damit Benutzer diesen Daten anzeigen und mit ihnen interagieren können. 
           </p>
         </li>
-        <li>
+        <li class="backend">
           <fa class="icon" :icon="['fa', 'database']"/>
           <h1>Backend development</h1>
           <p>
@@ -85,7 +85,7 @@
             was zwischen der Datenbank und dem Browser kommuniziert, verantwortlich ist. 
           </p>
         </li>
-        <li>
+        <li class="managment">
           <fa class="icon" :icon="['fa', 'edit']"/>
           <h1>Website Managment</h1>
           <p>
@@ -98,12 +98,56 @@
 </template>
 
 <script>
+import {gsap} from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 export default {
   name: 'Home',
   components: {
-    
-  }
+  },
+    mounted() {
+    this.startAnimation()    
+  },  
+  methods: {
+    startAnimation: function(){  
+       gsap.registerPlugin(ScrollTrigger);  
+        gsap.defaults({
+          duration: 2,
+          opacity: 0
+      })
+           let timeLine01 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".programmierSprache",
+          start: "top center"
+        }
+      }) 
+      timeLine01.from('#programmierBox', {x: -300,})
+      
+      let timeLine02 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#service",
+          start: "top center"
+        }
+      }) 
+      timeLine02.from('.frontend', {y: 300}, "-=1")
+      
+      let timeLine03 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#service",
+          start: "top center"
+        }
+      }) 
+      timeLine03.from('.backend', {y: 300}, "+=1")
+
+       let timeLine04 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#service",
+          start: "top center"
+        }
+      }) 
+      timeLine04.from('.managment', {y: 300}, "+=2")
+    }
+  },
 }
 </script>
 
