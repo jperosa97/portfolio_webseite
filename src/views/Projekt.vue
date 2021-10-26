@@ -36,7 +36,7 @@ export default {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 45vh;
+  height: 40vh;
 }
 .containerTitel .projekt{
   display: -webkit-box;

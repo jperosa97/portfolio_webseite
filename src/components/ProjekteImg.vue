@@ -1,7 +1,8 @@
 <template>
     <div class="containerProjekt">
     <ul class="projektImg">
-      <li>
+      <li id="box01">
+        <div class="containerAnim01">
         <div class="containerLinks">
           <h1>Symfony Menukart</h1>
           <p> 
@@ -17,9 +18,11 @@
             </a>
           </n-space>   
         </div>
-        <img class="imgLinks" src="../assets/projektImg/1.png" alt="Symfony">
+        <img class="imgLinks" src="../assets/projektImg/1.png" alt="Symfony"> 
+        </div>
       </li>
-     <li>
+     <li id="box02">
+      <div class="containerAnim02">
         <img class="imgRechts" src="../assets/projektImg/2.png" alt="Vue Js">
         <div class="containerRechts">
           <h1>Vuejs Anime</h1>
@@ -36,8 +39,10 @@
             </a>
           </n-space>
         </div>
+        </div>
       </li>
-     <li>
+     <li id="box03">
+     <div class="containerAnim03">
       <div class="containerLinks">
         <h1>Node Js Webapp</h1>
         <p>
@@ -53,8 +58,10 @@
         </n-space>
         </div>
         <img class="imgLinks" src="../assets/projektImg/3.png" alt="Node Js ">
+        </div>
       </li>
-      <li>
+      <li id="box04">
+      <div  class="containerAnim04">
         <img class="imgRechts" src="../assets/projektImg/4.png" alt="JS">
          <div class="containerRechts">
         <h1>JS Wetter App</h1>
@@ -72,11 +79,65 @@
         </n-space>
         
         </div>
+      </div>
       </li>
    
    </ul>
   </div>
 </template>
+
+<script>
+import {gsap} from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+export default {
+  mounted() {
+    this.startAnimation()    
+  },  
+  methods: {
+    startAnimation: function(){  
+        gsap.registerPlugin(ScrollTrigger);  
+        gsap.defaults({
+          duration: 1.5,
+          opacity: 0
+      })
+      let timeLine01 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#box01",
+          start: "top center"
+        }
+      })
+      timeLine01.from('.containerAnim01', { y: 300, });
+
+      let timeLine02 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#box02",
+          start: "top center"
+        }
+      })
+        timeLine02.from('.containerAnim02', { y: 300, });
+      
+        
+      let timeLine03 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#box03",
+          start: "top center"
+        }
+      })
+      timeLine03.from('.containerAnim03', { y: 300, })
+      
+      let timeLine04 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#box04",
+          start: "top center"
+        }
+      })
+      timeLine04.from('.containerAnim04', { y: 300, });
+    }
+  },
+}
+</script>
 
 <style>
  .containerProjekt .projektImg {
@@ -90,6 +151,20 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 255vh;
+}
+.containerAnim01{
+  display: flex;
+}
+.containerAnim02{
+  display: flex;
+  width: 0;
+}
+.containerAnim03{
+  display: flex;
+}
+.containerAnim04{
+  display: flex;
+  width: 0;
 }
 .containerProjekt .projektImg li {
   list-style: none;
