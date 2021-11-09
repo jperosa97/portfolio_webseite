@@ -2,10 +2,10 @@
   <div id="nav">
     <img alt="Vue logo" src="../assets/logo.png">
     <ul>
-      <li class="nav01"><router-link to="/">
-      <fa icon="user" /> Über mich</router-link></li>
-      <li class="nav02"><router-link to="/werdegang"><fa icon="suitcase"/> Werdegang</router-link></li>
-      <li class="nav03"><router-link to="/projekt"> <fa icon="code"/> Projekte</router-link></li>
+      <li class="nav01"><router-link to="/"><fa icon="user" /> Über mich</router-link></li>
+      <li class="nav02"><router-link to="/zeugnis"><fa icon="file-alt"/> Zeugnis</router-link></li>
+      <li class="nav03"><router-link to="/werdegang"><fa icon="suitcase"/> Werdegang</router-link></li>
+      <li class="nav04"><router-link to="/projekt"> <fa icon="code"/> Projekte</router-link></li>
     </ul>
   </div>
   <router-view/>
@@ -27,6 +27,7 @@ export default {
       gsap.from('.nav01', {y: -200}, "+=0.25");
       gsap.from('.nav02', {y: -200}, "-=1");
       gsap.from('.nav03', {y: -200}, "-=1");
+      gsap.from('.nav04', {y: -200}, "-=1");
   },
 
   }
