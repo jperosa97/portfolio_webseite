@@ -63,5 +63,6 @@ export default {
   text-align: initial;
   position: relative;
   left: -12em;
+  font-size: 15px;
 }
 </style>
