@@ -28,31 +28,31 @@ import { defineComponent, ref } from 'vue'
 
 export default defineComponent ({
 setup() {
-        const url1 = ref(
-        require ('@/assets/diploma_zertifikat/diploma_zeugnis-1.png')
-        )
-        const srcList1 = ref([
-        require ('@/assets/diploma_zertifikat/diploma_zeugnis-2.png'),
-        require ('@/assets/diploma_zertifikat/diploma_zeugnis-3.png'),
-        
-        ])
-        const url2 = ref(
-        require ('@/assets/udemy_logo.jpg')
-        )
-        const srcList2 = ref([
-        require ('@/assets/diploma_zertifikat/udemy/laravel_zertifikat.png'),
-        require ('@/assets/diploma_zertifikat/udemy/symfony_zertifikat.png'),
-        require ('@/assets/diploma_zertifikat/udemy/vueJs_zertifikat.png'),
-        
-        ])
+    const url1 = ref(
+    require ('@/assets/diploma_zertifikat/diploma_zeugnis-1.png')
+    )
+    const srcList1 = ref([
+    require ('@/assets/diploma_zertifikat/diploma_zeugnis-2.png'),
+    require ('@/assets/diploma_zertifikat/diploma_zeugnis-3.png'),
+    
+    ])
+    const url2 = ref(
+    require ('@/assets/udemy_logo.jpg')
+    )
+    const srcList2 = ref([
+    require ('@/assets/diploma_zertifikat/udemy/laravel_zertifikat.png'),
+    require ('@/assets/diploma_zertifikat/udemy/symfony_zertifikat.png'),
+    require ('@/assets/diploma_zertifikat/udemy/vueJs_zertifikat.png'),
+    
+    ])
 
-        return {
-        url1,
-        srcList1,
-        url2,
-        srcList2
-        }
+    return {
+    url1,
+    srcList1,
+    url2,
+    srcList2
     }
+  }
 })
 </script>
 
