@@ -1,4 +1,5 @@
 <template>
+<!--Beschreibung und icon Werdegang Section Start-->
   <section class="container">
     <div class="werdegang">
       <fa class="icon" icon="suitcase" /> 
@@ -9,6 +10,7 @@
   <section class="tab"> 
     <tabs></tabs>
   </section>
+  <!--Beschreibung und icon Werdegang Section Ende-->
 </template>
 
 <script>

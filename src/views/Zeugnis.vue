@@ -1,4 +1,5 @@
 <template>
+<!--Beschreibung und icon Zeugnis & Zertifikat Section Start-->
    <section class="container">
         <div class="zeugnis">
         <fa class="icon" icon="file-alt" /> 
@@ -9,6 +10,7 @@
         </p>
     </section> 
     <zeugnisImg></zeugnisImg>
+    <!--Beschreibung und icon Zeugnis & Zertifikat Section Ende-->
 </template>
 
 <script>

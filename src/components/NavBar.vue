@@ -11,6 +11,7 @@
   <router-view/>
 </template>
 <script>
+//Animation Gsap für die Navigation Button 
 import {gsap} from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 export default {

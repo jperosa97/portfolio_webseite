@@ -1,26 +1,30 @@
 <template>
-    <div class="imgContainer">
-
-  <div class="demo-image__preview">
-    <el-image
-      style="width: 300px; height: 200px"
-      :src="url1"
-      :preview-src-list="srcList1"
-      :initial-index="1"
-    >
-    </el-image>
+  <!--Zeugnis und Zertifikat Section Start-->
+  <div class="imgContainer">
+    <!--Zeugnis Section Start-->
+    <div class="demo-image__preview">
+      <el-image
+        style="width: 300px; height: 200px"
+        :src="url1"
+        :preview-src-list="srcList1"
+        :initial-index="1"
+      >
+      </el-image>
+    </div>
+    <!--Zeugnis Section Ende-->
+    <!--Zertifikat Section Start-->
+    <div class="demo-image__preview">
+      <el-image
+        style="width: 300px; height: 200px"
+        :src="url2"
+        :preview-src-list="srcList2"
+        :initial-index="1"
+      >
+      </el-image>
+    </div>
+    <!--Zertifikat Section Ende-->
   </div>
-
-  <div class="demo-image__preview">
-    <el-image
-      style="width: 300px; height: 200px"
-      :src="url2"
-      :preview-src-list="srcList2"
-      :initial-index="1"
-    >
-    </el-image>
-  </div>
- </div>
+  <!--Zeugnis und Zertifikat Section Ende-->
 </template>
 
 <script>

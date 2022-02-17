@@ -1,6 +1,8 @@
 <template>
+    <!--Container für meine Projekte mit Animation Start-->
     <div class="containerProjekt">
     <ul class="projektImg">
+      <!--Das Erste Projekt Container mit Bild und Beschreibung Start -->
       <li id="box01">
         <div class="containerAnim01">
         <div class="containerLinks">
@@ -13,7 +15,7 @@
             <n-tag type="success">Symfony</n-tag>
             <n-tag type="success">PHP</n-tag>
             <n-tag type="success">Twig</n-tag>
-            <a href="https://github.com/jperosa97/Symfony_Menukarte"> 
+            <a href="https://github.com/jperosa97/Symfony_Menukarte" target="_blank"> 
               <fa class="icon" :icon="['fab', 'github']"/>
             </a>
           </n-space>   
@@ -21,6 +23,8 @@
         <img class="imgLinks" src="../assets/projektImg/1.png" alt="Symfony"> 
         </div>
       </li>
+      <!--Das Erste Projekt Container mit Bild und Beschreibung Ende -->
+      <!--Das Zweite Projekt Container mit Bild und Beschreibung Start -->
      <li id="box02">
       <div class="containerAnim02">
         <img class="imgRechts" src="../assets/projektImg/2.png" alt="Vue Js">
@@ -34,13 +38,18 @@
             <n-tag type="success">Vue JS</n-tag>
             <n-tag type="success">Primevue</n-tag>
             <n-tag type="success">Jikan Api</n-tag>
-            <a href="https://github.com/jperosa97/VueJS_Anime"> 
+            <a href="https://anime-vue-js.netlify.app/" target="_blank"> 
+              <fa class="icon" :icon="['fa', 'globe']"/>
+            </a>
+            <a href="https://github.com/jperosa97/VueJS_Anime" target="_blank"> 
               <fa class="icon" :icon="['fab', 'github']"/>
             </a>
           </n-space>
         </div>
         </div>
       </li>
+       <!-- Das Zweite Projekt Container mit Bild und Beschreibung Ende -->
+      <!--Das Dritte Projekt Container mit Bild und Beschreibung Start -->
      <li id="box03">
      <div class="containerAnim03">
       <div class="containerLinks">
@@ -52,7 +61,7 @@
           <n-tag type="success">Node Js</n-tag>
           <n-tag type="success">EJS</n-tag>
           <n-tag type="success">Spoonacular Api</n-tag>
-          <a href="https://github.com/jperosa97/lets_cook_webapp"> 
+          <a href="https://github.com/jperosa97/lets_cook_webapp" target="_blank"> 
             <fa class="icon" :icon="['fab', 'github']"/>
           </a>
         </n-space>
@@ -60,6 +69,8 @@
         <img class="imgLinks" src="../assets/projektImg/3.png" alt="Node Js ">
         </div>
       </li>
+       <!-- Das Dritte Projekt Container mit Bild und Beschreibung Ende -->
+        <!--Das Vierte Projekt Container mit Bild und Beschreibung Start -->
       <li id="box04">
       <div  class="containerAnim04">
         <img class="imgRechts" src="../assets/projektImg/4.png" alt="JS">
@@ -73,14 +84,18 @@
           <n-tag type="success">JS</n-tag>
           <n-tag type="success">OpenWeatherMap</n-tag>
           <n-tag type="success">HTML & CSS</n-tag>
-          <a  href="https://github.com/jperosa97/Wetter_Api_JS"> 
+          <a href="https://jperosa97.github.io/Wetter_Api_JS/" target="_blank"> 
+            <fa class="icon" :icon="['fa', 'globe']"/>
+          </a>
+          <a  href="https://github.com/jperosa97/Wetter_Api_JS" target="_blank"> 
             <fa class="icon" :icon="['fab', 'github']"/>
           </a>
         </n-space>
-        
         </div>
       </div>
       </li>
+      <!--Das Vierte Projekt Container mit Bild und Beschreibung Ende -->
+      <!--Das Fünfte Projekt Container mit Bild und Beschreibung Start -->
     <li id="box05">
      <div class="containerAnim05">
       <div class="containerLinks">
@@ -93,7 +108,7 @@
           <n-tag type="success">Wordpress</n-tag>
           <n-tag type="success">Theme</n-tag>
           <n-tag type="success">Frontend</n-tag>
-          <a href="https://beni-gaertner.ch/"> 
+          <a href="https://beni-gaertner.ch/" target="_blank"> 
             <fa class="icon" :icon="['fa', 'globe']"/>
           </a>
         </n-space>
@@ -101,6 +116,8 @@
         <img class="imgLinks" src="../assets/projektImg/5.png" alt="Wordpress ">
         </div>
       </li>
+      <!--Das Fünfte Projekt Container mit Bild und Beschreibung Ende -->
+      <!--Das Sechste Projekt Container mit Bild und Beschreibung Start -->
       <li id="box06">
             <div  class="containerAnim06">
         <img class="imgRechts" src="../assets/projektImg/6.png" alt="JS">
@@ -114,20 +131,24 @@
           <n-tag type="success">JS</n-tag>
           <n-tag type="success">Gsap</n-tag>
           <n-tag type="success">HTML & CSS</n-tag>
-          <a  href="https://github.com/jperosa97/Javascript_GSAP_Animation"> 
+          <a href="https://jperosa97.github.io/Javascript_GSAP_Animation/" target="_blank"> 
+            <fa class="icon" :icon="['fa', 'globe']"/>
+          </a>
+          <a  href="https://github.com/jperosa97/Javascript_GSAP_Animation" target="_blank"> 
             <fa class="icon" :icon="['fab', 'github']"/>
           </a>
         </n-space>
-        
         </div>
       </div>
-      
       </li>
+      <!--Das Sechste Projekt Container mit Bild und Beschreibung Ende -->
    </ul>
   </div>
+  <!--Container für meine Projekte mit Animation Ende-->
 </template>
 
 <script>
+//Animation section gsap 
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
@@ -135,6 +156,7 @@ export default {
   mounted() {
     this.startAnimation()    
   },  
+
   methods: {
     startAnimation: function(){  
         gsap.registerPlugin(ScrollTrigger);  

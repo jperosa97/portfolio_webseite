@@ -1,4 +1,5 @@
 <template>
+  <!--Components Navigation und Side Navigation-->
   <navBar></navBar>
   <sideBarMedie></sideBarMedie>
 </template>

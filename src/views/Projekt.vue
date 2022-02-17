@@ -1,4 +1,5 @@
 <template>
+<!--Beschreibung und icon Projekt Section Start-->
   <div class="containerTitel">
       <div class="projekt">
         <fa class="icon" icon="code" /> 
@@ -9,6 +10,7 @@
       </p>
   </div>
   <projekteImg></projekteImg>
+  <!--Beschreibung und icon Projekt Section Ende-->
 </template>
 <script>
 import ProjekteImg from '@/components/ProjekteImg.vue'

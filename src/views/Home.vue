@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+  <!--Beschreibung und Profilbild Section Start-->
     <div class="profilBild">
       <img src="../assets/portfoliofoto.jpg" alt="">
     </div>
@@ -20,6 +21,8 @@
       </p> 
       <p> Hier sind einige Technologien, mit denen ich in letzter Zeit gearbeitet habe: </p>
     </div>
+    <!--Beschreibung und Profilbild Section Ende-->
+    <!--Programmiersprachen Section Start-->
     <div class="programmierSprache">
       <ul id="programmierBox">
         <li>
@@ -63,7 +66,9 @@
           </li>
         </ul>
       </div>
-      </div>
+    </div>
+    <!--Programmiersprachen Section Ende-->
+    <!--Service Section Start-->
     <div class="service">
       <div class="titel">
         <h1>Was kann ich anbieten / Service</h1>
@@ -95,9 +100,11 @@
         </li>
       </ul>
     </div>  
+    <!--Service Section Ende-->
 </template>
 
 <script>
+//Animation Gsap für die Programmier und Service Button 
 import {gsap} from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
