@@ -33,8 +33,8 @@
           <div class="test"> 
             <fa class="icon" :icon="['fab', 'js-square']"/> <h1>Javascript</h1>
           </div>
-             <div class="test"> 
-            <fa class="icon" :icon="['fab', 'angular']"/> <h1>Angular</h1>
+           <div class="test">
+              <fa class="icon" :icon="['fab', 'wordpress']"/> <h1>Wordpress</h1>
           </div>
              <div class="test"> 
             <fa class="icon" :icon="['fab', 'php']"/> <h1>PHP & MYSQL</h1>
@@ -58,11 +58,6 @@
             </div>
           </li>
           <li>
-             <div class="content">
-            <div class="test">
-              <fa class="icon" :icon="['fab', 'wordpress']"/> <h1>Wordpress</h1>
-          </div>
-            </div>
           </li>
         </ul>
       </div>
