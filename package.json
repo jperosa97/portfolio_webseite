@@ -16,7 +16,7 @@
     "ansi-regex": "^6.0.1",
     "core-js": "^3.6.5",
     "element-plus": "^1.1.0-beta.24",
-    "follow-redirects": "^1.14.7",
+    "follow-redirects": "^1.14.8",
     "glob-parent": "^6.0.2",
     "gsap": "^3.8.0",
     "json-schema": "^0.4.0",
