@@ -128,9 +128,9 @@
           einer Nintendo Switch sieht.
         </p>
         <n-space>
-          <n-tag type="success">JS</n-tag>
-          <n-tag type="success">Gsap</n-tag>
-          <n-tag type="success">HTML & CSS</n-tag>
+            <n-tag type="success">JS</n-tag>
+            <n-tag type="success">Gsap</n-tag>
+            <n-tag type="success">HTML & CSS</n-tag>
           <a href="https://jperosa97.github.io/Javascript_GSAP_Animation/" target="_blank"> 
             <fa class="icon" :icon="['fa', 'globe']"/>
           </a>
