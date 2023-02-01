@@ -1,6 +1,14 @@
 <template>
     <!--Tabs für meinen Beruflichen Werdegang Start-->
     <el-tabs :tab-position="tabPosition" style="height: 250px;">
+     <!--Tabs für meinen Beruflichen Werdegang H2G Start -->
+        <el-tab-pane label="H2G Internetagentur">
+            <h1>Praktikum Webentwicklung
+                <small>02.2023 - 04.2023</small> 
+            </h1>
+            <p>Sicherstellen der Kundenaufrträge, Einrichten, Produktion und Überwachung der Produktionsanlagen.</p>
+        </el-tab-pane>
+         <!--Tabs für meinen Beruflichen Werdegang H2G Ende -->
          <!--Tabs für meinen Beruflichen Werdegang Effingermedien Start -->
         <el-tab-pane label="Effingermedien">
             <h1>Maschinenführer
