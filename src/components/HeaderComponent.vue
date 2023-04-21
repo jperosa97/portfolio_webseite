@@ -25,14 +25,23 @@
                 </p>
             </v-col>
             <v-col>
-                <v-card class="my-card" max-width="415">
-                    <v-img src="../assets/portfoliofoto.jpg" contain height="400" max-width="100%"></v-img>
+                <v-card class="my-card" max-width="400">
+                    <v-img src="../assets/portfoliofoto.jpg" contain></v-img>
                 </v-card>
             </v-col>
+            <ProgrammiersprachenComponent/>
         </v-row>
     </v-container>
 </template>
+<script>
+import ProgrammiersprachenComponent from './ProgrammiersprachenComponent.vue'
 
+export default {
+    components: {
+        ProgrammiersprachenComponent
+    }
+}
+</script>
 <style scoped>
 h1 {
     font-size: 18px;
@@ -42,10 +51,6 @@ h1 {
     margin: 0 auto;
     /* Zum Zentrieren der Karte */
 }
-
-/*p{
-     line-height: 1.5;
-}*/
 @media screen and (min-width: 480px) {
     h1 {
         font-size: 30px;

@@ -1,14 +1,14 @@
 <template>
   <HeaderComponent />
-  <!-- <TimeLine /> -->
+  <TimeLine />
 </template>
 <script>
-// import TimeLine from '@/components/TimeLine.vue';
+import TimeLine from '@/components/TimeLine.vue';
 import HeaderComponent from '@/components/HeaderComponent.vue';
 export default {
   components: {
     HeaderComponent,
-    // TimeLine,
+    TimeLine,
   }
 }
 </script>

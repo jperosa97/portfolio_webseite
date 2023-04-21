@@ -1,6 +1,6 @@
 <template>
       <div id="nav">
-        <img alt="Vue logo" src="../assets/logo.png">
+        <img alt="jpe logo" src="../assets/logo.png">
         <ul>
           <li class="nav01"><router-link to="/"><fa icon="user" /> Über mich</router-link></li>
           <!-- <li class="nav02"><router-link to="/zeugnis"><fa icon="file-alt"/> Zeugnis</router-link></li>

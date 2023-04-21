@@ -1,48 +1,71 @@
 <template>
     <!-- Programmiersprachen Section Start-->
-    <div class="programmierSprache">
-        <h1>  Hier sind einige Technologien, mit denen ich in letzter Zeit gearbeitet habe:</h1>
-        <ul id="programmierBox">
-            <li>
-                <div class="content">
-                    <div class="test">
-                        <fa class="icon" :icon="['fab', 'html5']" />
-                        <h1>HTML & CSS</h1>
-                    </div>
-                    <div class="test">
-                        <fa class="icon" :icon="['fab', 'js-square']" />
-                        <h1>Javascript</h1>
-                    </div>
-                    <div class="test">
-                        <fa class="icon" :icon="['fab', 'wordpress']" />
-                        <h1>Wordpress</h1>
-                    </div>
-                    <div class="test">
-                        <fa class="icon" :icon="['fab', 'php']" />
-                        <h1>PHP & MYSQL</h1>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="content">
-                    <div class="test">
-                        <fa class="icon" :icon="['fab', 'symfony']" />
-                        <h1>Symfony</h1>
-                    </div>
-                    <div class="test">
-                        <fa class="icon" :icon="['fab', 'laravel']" />
-                        <h1>Laravel</h1>
-                    </div>
-                    <div class="test">
-                        <fa class="icon" :icon="['fab', 'vuejs']" />
-                        <h1>Vue Js</h1>
-                    </div>
-                    <div class="test">
-                        <fa class="icon" :icon="['fab', 'node']" />
-                        <h1>Node Js</h1>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <p> Hier sind einige Technologien, mit denen ich in letzter Zeit gearbeitet habe:</p>
+   <v-row >
+        <v-col  v-for="item in items" :key="item.id" cols="2">
+            <div class="badge-wrapper">
+                <v-chip class="ma-2" variant="outlined" label :color="item.color">
+                    <v-icon start :icon="item.icon"></v-icon>
+                    {{ item.title }}
+                </v-chip>
+            </div>
+        </v-col>
+    </v-row> 
 </template>
+<script>
+export default {
+    data: () => ({
+        items: [
+            {
+              color: 'info',
+              icon: 'mdi-language-html5',
+              title: 'HTML & CSS',
+            },
+            {
+              color: 'info',
+              icon: 'mdi-language-javascript',
+              title: 'Javascript',
+            },
+            {
+              color: 'info',
+              icon: 'mdi-wordpress',
+              title: 'Wordpress',
+            },
+            {
+              color: 'info',
+              icon: 'mdi-alpha-c-box-outline',
+              title: 'Craft cms',
+            },
+            {
+              color: 'info',
+              icon: 'mdi-language-php',
+              title: 'PHP & MYSQL',
+            },
+            {
+              color: 'info',
+              icon: 'mdi-symfony',
+              title: 'Symfony',
+            },
+            {
+              color: 'info',
+              icon: 'mdi-laravel',
+              title: 'Laravel',
+            },
+            {
+              color: 'info',
+              icon: 'mdi-vuejs',
+              title: 'Vue Js',
+            },
+            {
+              color: 'info',
+              icon: 'mdi-nodejs',
+              title: 'Node Js',
+            },
+        ],
+    })
+}
+
+</script>
+<style>
+
+</style>
