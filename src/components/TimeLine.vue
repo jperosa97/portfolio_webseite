@@ -25,7 +25,7 @@
                       <span>{{ work.date }}, {{ work.firma }}</span>
                     </v-card-subtitle>
                     <v-card-text>{{ work.text }}</v-card-text>
-                    <v-btn v-if="work.pdfUrl" :href="`../assets/${work.pdfUrl}`" target="_blank" variant="outlined">Button</v-btn>
+                    <v-btn v-if="work.pdfUrl" :href="work.pdfUrl" target="_blank" variant="outlined">Button</v-btn>
                   </v-card>
                 </v-timeline-item>
               </v-timeline>
@@ -38,7 +38,7 @@
                     <v-card-subtitle>
                       <span>{{ experience.school }}, {{ experience.date }}</span>
                     </v-card-subtitle>
-                    <v-btn v-if="experience.pdfUrl" :href="`../assets/diploma_zertifikat/${experience.pdfUrl}`" target="_blank" variant="outlined">Button</v-btn>
+                    <v-btn v-if="experience.pdfUrl" :href="experience.pdfUrl" target="_blank" variant="outlined">Button</v-btn>
                   </v-card>
                 </v-timeline-item>
               </v-timeline>
@@ -50,6 +50,8 @@
   </div>
 </template>
 <script>
+import workCertificate1  from '../assets/diploma_zertifikat/zeugnisse.pdf'
+import workCertificate2  from '../assets/diploma_zertifikat/zeugnisse.pdf'
 export default {
   data: () => ({
       tab: null,
@@ -59,7 +61,7 @@ export default {
           title: 'Praktikum Webentwickler',
           firma: 'H2G Internetagentur in Aarau',
           text: 'Sicherstellen der Kundenaufträgen, Einrichten, Produktion und Überwachung der Produktionsanlag.',
-          pdfUrl: 'Lebenslauf_Janick_Perosa.pdf',
+          pdfUrl: workCertificate1,
         },
         {
           date: '01.2020 - 06.2020',
@@ -79,7 +81,7 @@ export default {
         title: 'Webdesign & Development',
         school: 'sae institute',
         date: '03.2019 - 03.2021',
-        pdfUrl: 'zeugnisse.pdf',
+        pdfUrl: workCertificate2,
       },
       {
         title: 'Printmedienverarbeiter Druckausrüster',
