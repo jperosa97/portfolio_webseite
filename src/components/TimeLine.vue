@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Erfahrungen</h1>
+    <h1 class="mb-9">Erfahrungen</h1>
     <v-row>
       <v-col>
         <v-tabs v-model="tab" align-tabs="center" centered stacked>
@@ -19,13 +19,13 @@
             <v-window-item value="tab-1">
               <v-timeline>
                 <v-timeline-item v-for="(work, index) in works" :key="index">
-                  <v-card max-width="500" height="180" class="pa-2">
+                  <v-card max-width="500" class="pa-2">
                     <v-card-title>{{ work.title }}</v-card-title>
                     <v-card-subtitle>
                       <span>{{ work.date }}, {{ work.firma }}</span>
                     </v-card-subtitle>
                     <v-card-text>{{ work.text }}</v-card-text>
-                    <!-- <v-btn @click="showPDF(item.pdfUrl)" variant="outlined">Button</v-btn> -->
+                    <v-btn v-if="work.pdfUrl" :href="`src/assets/${work.pdfUrl}`" target="_blank" variant="outlined">Button</v-btn>
                   </v-card>
                 </v-timeline-item>
               </v-timeline>
@@ -33,12 +33,12 @@
             <v-window-item value="tab-2">
               <v-timeline>
                 <v-timeline-item v-for="(experience, index) in experiences" :key="index">
-                  <v-card max-width="auto" height="100" class="pa-2">
+                  <v-card max-width="auto" class="pa-2">
                     <v-card-title>{{ experience.title }}</v-card-title>
                     <v-card-subtitle>
                       <span>{{ experience.school }}, {{ experience.date }}</span>
                     </v-card-subtitle>
-                    <!-- <v-btn @click="showPDF(experience.pdfUrl)" variant="outlined">Button</v-btn> -->
+                    <v-btn v-if="experience.pdfUrl" :href="`src/assets/diploma_zertifikat/${experience.pdfUrl}`" target="_blank" variant="outlined">Button</v-btn>
                   </v-card>
                 </v-timeline-item>
               </v-timeline>
@@ -59,7 +59,7 @@ export default {
           title: 'Praktikum Webentwickler',
           firma: 'H2G Internetagentur in Aarau',
           text: 'Sicherstellen der Kundenaufträgen, Einrichten, Produktion und Überwachung der Produktionsanlag.',
-          pdfUrl: '../assets/Lebenslauf_Janick_Perosa.pdf',
+          pdfUrl: 'Lebenslauf_Janick_Perosa.pdf',
         },
         {
           date: '01.2020 - 06.2020',
@@ -78,7 +78,8 @@ export default {
       {
         title: 'Webdesign & Development',
         school: 'sae institute',
-        date: '03.2019 - 03.2021'
+        date: '03.2019 - 03.2021',
+        pdfUrl: 'zeugnisse.pdf',
       },
       {
         title: 'Printmedienverarbeiter Druckausrüster',

@@ -30,15 +30,18 @@
                 </v-card>
             </v-col>
             <ProgrammiersprachenComponent/>
+            <CardComponent/>
         </v-row>
     </v-container>
 </template>
 <script>
 import ProgrammiersprachenComponent from './ProgrammiersprachenComponent.vue'
+import CardComponent from './CardComponent.vue'
 
 export default {
     components: {
-        ProgrammiersprachenComponent
+        ProgrammiersprachenComponent,
+        CardComponent
     }
 }
 </script>

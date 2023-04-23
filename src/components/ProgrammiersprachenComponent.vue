@@ -1,7 +1,7 @@
 <template>
   <!-- Programmiersprachen Section Start-->
   <p> Hier sind einige Technologien, mit denen ich in letzter Zeit gearbeitet habe:</p>
-  <v-container fluid style="margin: 0px; padding: 0px; width: 80%">
+  <v-container class="mt-4 mb-1" fluid style="margin: 0; padding: 0; width: 80%">
     <v-row>
       <v-col v-for="item in items" :key="item.id" cols="2">
         <v-chip class="ma-2" variant="outlined" label :color="item.color">

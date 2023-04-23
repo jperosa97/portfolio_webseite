@@ -1,12 +1,12 @@
 <template>
       <div id="nav">
         <img alt="jpe logo" src="../assets/logo.png">
-        <ul>
-          <li class="nav01"><router-link to="/"><fa icon="user" /> Über mich</router-link></li>
-          <!-- <li class="nav02"><router-link to="/zeugnis"><fa icon="file-alt"/> Zeugnis</router-link></li>
-          <li class="nav03"><router-link to="/werdegang"><fa icon="suitcase"/> Werdegang</router-link></li>
-          <li class="nav04"><router-link to="/projekt"> <fa icon="code"/> Projekte</router-link></li> -->
-        </ul>
+        <!-- <ul> -->
+          <!-- <li class="nav01"><router-link to="/"><fa icon="user" /> Über mich</router-link></li> -->
+          <!--  <li class="nav02"><router-link to="/zeugnis"><fa icon="file-alt"/> Zeugnis</router-link></li> -->
+          <!-- <li class="nav03"><router-link to="/werdegang"><fa icon="suitcase"/> Werdegang</router-link></li> -->
+          <!-- <li class="nav04"><router-link to="/projekt"> <fa icon="code"/> Projekte</router-link></li> --> 
+        <!-- </ul> -->
       </div>
       <router-view/>
 </template>

@@ -1,10 +1,11 @@
 <template>
   <NavBar />
-  <!-- <router-view /> -->
+  <SideBarMenu />
 </template>
 
 <script setup>
    import NavBar from '@/components/NavBar.vue';
+   import SideBarMenu from '@/components/SideBarMenu.vue';
 </script>
 <style>
 body {
