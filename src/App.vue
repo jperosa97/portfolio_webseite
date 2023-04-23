@@ -1,28 +1,14 @@
 <template>
-  <!--Components Navigation und Side Navigation-->
-  <navBar></navBar>
-  <sideBarMedie></sideBarMedie>
+  <NavBar />
+  <SideBarMenu />
 </template>
 
-<script>
-// @ is an alias to /src
-import NavBar from '@/components/NavBar.vue'
-import SideBarMedie from '@/components/SideBarMedie.vue'
-
-export default {
-  name: 'App',
-  components: {
-    NavBar,
-    SideBarMedie 
-  }
-}
+<script setup>
+   import NavBar from '@/components/NavBar.vue';
+   import SideBarMenu from '@/components/SideBarMenu.vue';
 </script>
-
 <style>
-
 body {
   font-family: 'Roboto Mono', monospace;
-  background-color: #1A191C;
 }
-
 </style>

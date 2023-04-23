@@ -1,16 +1,20 @@
-import { createApp } from 'vue'
+/**
+ * main.js
+ *
+ * Bootstraps Vuetify and other plugins then mounts the App`
+ */
+
+// Components
 import App from './App.vue'
-import router from './router'
-import naive from "naive-ui";
-import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/free-solid-svg-icons'
-import { faSymfony, faJsSquare, faAngular, faPhp, faHtml5, faLaravel, faVuejs, faNode, faWordpress, faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
-library.add(fas, faSymfony, faJsSquare, faAngular, faPhp, faHtml5, faLaravel, faVuejs, faNode, faWordpress, faGithub, faLinkedin, faInstagram )
+// Composables
+import { createApp } from 'vue'
 
-createApp(App)
-.component('fa', FontAwesomeIcon)
-.use(router).use(naive).use(ElementPlus).mount('#app')
+// Plugins
+import { registerPlugins } from '@/plugins'
+
+const app = createApp(App)
+
+registerPlugins(app)
+
+app.mount('#app')
