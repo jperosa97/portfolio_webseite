@@ -3,7 +3,7 @@
   <v-carousel class="mt-9" cycle height="500" hide-delimiter-background :show-arrows="false">
     <v-carousel-item v-for="(slide, i) in slides" :key="i">
       <v-card class="mx-auto" max-width="400">
-        <v-img class="align-end text-white" height="200" :src="`../assets/projectImg/${slide.src}`" cover>
+        <v-img class="align-end text-white" height="200" :src="`/assets/projectImg/${slide.src}`" cover>
           <v-card-title>{{ slide.title }}</v-card-title>
         </v-img>
         <v-card-subtitle class="pt-4">
