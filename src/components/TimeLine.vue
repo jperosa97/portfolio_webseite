@@ -25,7 +25,7 @@
                       <span>{{ work.date }}, {{ work.firma }}</span>
                     </v-card-subtitle>
                     <v-card-text>{{ work.text }}</v-card-text>
-                    <v-btn v-if="work.pdfUrl" :href="`src/assets/${work.pdfUrl}`" target="_blank" variant="outlined">Button</v-btn>
+                    <v-btn v-if="work.pdfUrl" :href="`../assets/${work.pdfUrl}`" target="_blank" variant="outlined">Button</v-btn>
                   </v-card>
                 </v-timeline-item>
               </v-timeline>
@@ -38,7 +38,7 @@
                     <v-card-subtitle>
                       <span>{{ experience.school }}, {{ experience.date }}</span>
                     </v-card-subtitle>
-                    <v-btn v-if="experience.pdfUrl" :href="`src/assets/diploma_zertifikat/${experience.pdfUrl}`" target="_blank" variant="outlined">Button</v-btn>
+                    <v-btn v-if="experience.pdfUrl" :href="`../assets/diploma_zertifikat/${experience.pdfUrl}`" target="_blank" variant="outlined">Button</v-btn>
                   </v-card>
                 </v-timeline-item>
               </v-timeline>
