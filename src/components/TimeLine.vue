@@ -50,8 +50,10 @@
   </div>
 </template>
 <script>
-import workCertificate1  from '../assets/diploma_zertifikat/zeugnisse.pdf'
-import workCertificate2  from '../assets/diploma_zertifikat/zeugnisse.pdf'
+import workCertificate1  from '../assets/arbeitszeugnisse/Arbeitszeugnisse_effingermedien.pdf'
+import workCertificate2  from '../assets/arbeitszeugnisse/Arbeitszeugnisse_jobtv.pdf'
+import schoolCertificate1  from '../assets/diploma_zertifikat/zeugnisse.pdf'
+
 export default {
   data: () => ({
       tab: null,
@@ -60,7 +62,7 @@ export default {
           date: '02.2023 - 04.2023',
           title: 'Praktikum Webentwickler',
           firma: 'H2G Internetagentur in Aarau',
-          text: 'Sicherstellen der Kundenaufträgen, Einrichten, Produktion und Überwachung der Produktionsanlag.',
+          text: 'Programmierung von Webseiten, Organisierte eigenständig Projekte, Wartung von bestehenden Webseiten',
           pdfUrl: workCertificate1,
         },
         {
@@ -68,12 +70,14 @@ export default {
           title: 'Maschinenführer',
           firma: 'Effingermedien in Kleindöttingen',
           text: 'Sicherstellen der Kundenaufträgen, Einrichten, Produktion und Überwachung der Produktionsanlag.',
+          pdfUrl: workCertificate1,
         },
         {
           date: '07.2019 - 11.2019',
           title: 'Mediendesigner',
           firma: 'Jobtv medienwerkstatt in Zürich',
           text: 'Digitalegrafische Konzepte, Screendesign, Logos und Flyer.',
+          pdfUrl: workCertificate2,
         },
       ],
        experiences: [
@@ -81,7 +85,7 @@ export default {
         title: 'Webdesign & Development',
         school: 'sae institute',
         date: '03.2019 - 03.2021',
-        pdfUrl: workCertificate2,
+        pdfUrl: schoolCertificate1,
       },
       {
         title: 'Printmedienverarbeiter Druckausrüster',

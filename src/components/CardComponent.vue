@@ -1,5 +1,5 @@
 <template>
-    <v-card v-for="(service, index) in services" :key="index" class="mx-auto ma-10" max-width="344" variant="outlined">
+    <v-card v-for="(service, index) in services" :key="index" class="mx-auto ma-10" height="280" max-width="344" variant="outlined">
         <v-row>
             <v-col>
                 <v-card-item>

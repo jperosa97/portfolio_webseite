@@ -1,16 +1,19 @@
 <template>
   <!-- Programmiersprachen Section Start-->
+  <v-container>
   <p> Hier sind einige Technologien, mit denen ich in letzter Zeit gearbeitet habe:</p>
-  <v-container class="mt-4 mb-1" fluid style="margin: 0; padding: 0; width: 80%">
-    <v-row>
-      <v-col v-for="item in items" :key="item.id" cols="2">
-        <v-chip class="ma-2" variant="outlined" label :color="item.color">
-          <v-icon start :icon="item.icon"></v-icon>
-          {{ item.title }}
-        </v-chip>
-      </v-col>
-    </v-row>
+    <v-container class="mt-4 mb-1" fluid style="margin: 0; padding: 0; width: 80%">
+      <v-row>
+        <v-col v-for="item in items" :key="item.id" cols="2">
+          <v-chip class="ma-2" variant="outlined" label :color="item.color">
+            <v-icon start :icon="item.icon"></v-icon>
+            {{ item.title }}
+          </v-chip>
+        </v-col>
+      </v-row>
+    </v-container>
   </v-container>
+  
 </template>
 <script>
 export default {
