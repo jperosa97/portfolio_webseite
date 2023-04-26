@@ -50,8 +50,9 @@
   </div>
 </template>
 <script>
-import workCertificate1  from '../assets/arbeitszeugnisse/Arbeitszeugnisse_effingermedien.pdf'
-import workCertificate2  from '../assets/arbeitszeugnisse/Arbeitszeugnisse_jobtv.pdf'
+import workCertificate1  from '../assets/arbeitszeugnisse/Arbeitszeugnis_H2G_Janick_Perosa.pdf'
+import workCertificate2  from '../assets/arbeitszeugnisse/Arbeitszeugnisse_effingermedien.pdf'
+import workCertificate3  from '../assets/arbeitszeugnisse/Arbeitszeugnisse_jobtv.pdf'
 import schoolCertificate1  from '../assets/diploma_zertifikat/zeugnisse.pdf'
 
 export default {
@@ -70,14 +71,14 @@ export default {
           title: 'Maschinenführer',
           firma: 'Effingermedien in Kleindöttingen',
           text: 'Sicherstellen der Kundenaufträgen, Einrichten, Produktion und Überwachung der Produktionsanlag.',
-          pdfUrl: workCertificate1,
+          pdfUrl: workCertificate2,
         },
         {
           date: '07.2019 - 11.2019',
           title: 'Mediendesigner',
           firma: 'Jobtv medienwerkstatt in Zürich',
           text: 'Digitalegrafische Konzepte, Screendesign, Logos und Flyer.',
-          pdfUrl: workCertificate2,
+          pdfUrl: workCertificate3,
         },
       ],
        experiences: [
