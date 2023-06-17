@@ -1,18 +1,21 @@
 <template>
       <div id="nav">
         <img alt="jpe logo" src="../assets/logo.png">
-        <!-- <ul> -->
-          <!-- <li class="nav01"><router-link to="/"><fa icon="user" /> Über mich</router-link></li> -->
-          <!--  <li class="nav02"><router-link to="/zeugnis"><fa icon="file-alt"/> Zeugnis</router-link></li> -->
-          <!-- <li class="nav03"><router-link to="/werdegang"><fa icon="suitcase"/> Werdegang</router-link></li> -->
-          <!-- <li class="nav04"><router-link to="/projekt"> <fa icon="code"/> Projekte</router-link></li> --> 
-        <!-- </ul> -->
+        <ul> 
+          <li class="nav-link"><a  @click="scrollToSection('#section1')" class="active" >Über mich</a></li>
+          <li class="nav-link"><a  @click="scrollToSection('#section2')"> Werdegang & Zeugnis</a></li>
+          <li class="nav.link"><a  @click="scrollToSection('#section3')">Projekte</a></li> 
+        </ul>
       </div>
       <router-view/>
 </template>
 <script>
 export default {
-
+    methods: {
+    scrollToSection(sectionId) {
+      this.$scrollTo(sectionId, 500);
+    },
+  },
 }
 </script>
 <style>
@@ -20,7 +23,6 @@ export default {
 
 #app {
     text-align: center;
-    color: #FBFBFA;
 }
 
 #nav {
@@ -30,7 +32,11 @@ export default {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 90vw;
+    background-color: #2c3439; 
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    border-bottom: solid 1px #ced9bf;
 }
 
 #nav ul {
@@ -58,7 +64,7 @@ export default {
     color: #42b983;
 }
 
-#nav a.router-link-exact-active {
+#nav a.active {
     color: #42b983;
 }
 

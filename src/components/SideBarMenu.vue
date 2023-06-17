@@ -15,12 +15,9 @@
                 <a href="mailto:janick.perosa97@hotmail.com">
                     <v-icon icon="mdi-email"></v-icon>
                 </a>
-
                 <hr>
             </li>
-
         </ul>
-
     </div>
 </template>
 
@@ -33,6 +30,7 @@
         list-style: none;
         position: fixed;
         bottom: 75px;
+        z-index: 1;
         left: 50px;
 
         li {

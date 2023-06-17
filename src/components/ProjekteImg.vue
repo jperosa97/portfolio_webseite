@@ -1,7 +1,11 @@
 <template>
-  <h1>Projekte</h1>
-  <v-carousel class="mt-9" cycle height="500" hide-delimiter-background :show-arrows="false">
-    <v-carousel-item v-for="(slide, i) in slides" :key="i">
+  <h1 id="section3" class="pa-8">Projekte</h1>
+      <v-row>
+    <v-col
+    v-for="(slide, i) in slides" :key="i"
+      class="d-flex child-flex"
+      cols="4"
+    >
       <v-card class="mx-auto" max-width="400">
         <v-img class="align-end text-white" height="200" :src="slide.src" cover>
           <v-card-title>{{ slide.title }}</v-card-title>
@@ -21,8 +25,8 @@
           </v-btn>
         </v-card-actions>
       </v-card>
-    </v-carousel-item>
-  </v-carousel>
+    </v-col>
+  </v-row>
 </template>
 
 <script>

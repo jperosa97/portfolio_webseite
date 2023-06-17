@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1 class="mb-9">Erfahrungen</h1>
+  <div id="section2">
+    <h1 class="pa-8">Erfahrungen</h1>
     <v-row>
       <v-col>
         <v-tabs v-model="tab" align-tabs="center" centered stacked>

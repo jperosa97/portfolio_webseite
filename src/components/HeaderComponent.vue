@@ -1,6 +1,6 @@
 <template>
-    <v-container class="container">
-        <v-row>
+    <v-container class="container" id="section1">
+        <v-row class="mt-16 pt-11">
             <v-col cols="12" md="8">
                 <v-col class="d-flex justify-center align-center">
                     <v-icon class="icon" icon="mdi-account"></v-icon>
@@ -8,20 +8,13 @@
                         <hr>
                     </h1>
                 </v-col>
-                <p class="text-left my-4" style="line-height: 1.6;">Hallo ich bin Janick Perosa und ein Webdeveloper <br>
-
-                    Ich mag es Dinge zu erstellen die im Internet leben, sei es Websites, Anwendungen oder irgendetwas
-                    dazwischen.
-                    Mein Ziel ist es, bei jeder Gelegenheit mitzumachen oder zu arbeiten, die mir hilft, meine Fähigkeiten
-                    und
-                    Kenntnisse zu
-                    erweitern und zu verbessern. Ich freue mich über herausfordernde Projekte und arbeite gerne mit
-                    allen möglichen Persönlichkeiten.
-
-                    Nach meinem Abschluss an der SAE Institute in
-                    Zürich als Webdesign & Development, suche ich eine stelle als Webdeveloper. Dort möchte ich an Vielzahl
-                    von
-                    faszinierende Technologien und hilfreiche Projekte mit arbeiten.
+                <p class="text-left my-4" style="line-height: 1.6;"> Hallo, mein Name ist Janick Perosa und ich bin ein Webentwickler.
+                    Ich bin leidenschaftlich daran interessiert, Dinge zu erstellen, die im Internet zum Leben erwachen, sei es Websites, 
+                    Anwendungen oder eine Kombination aus beidem. <br> <br> Mein Ziel ist es, bei jeder Gelegenheit, die sich mir bietet, mitzuwirken oder 
+                    zusammenzuarbeiten, um meine Fähigkeiten und Kenntnisse kontinuierlich zu erweitern und zu verbessern. Ich schätze herausfordernde Projekte 
+                    und arbeite gerne mit Menschen unterschiedlicher Persönlichkeiten zusammen. Nach meinem Abschluss an der SAE Institute in Zürich im Bereich Webdesign 
+                    und Entwicklung suche ich nun eine Stelle als Webentwickler. <br> <br> Dort möchte ich mit einer Vielzahl faszinierender Technologien arbeiten und an hilfreichen 
+                    Projekten mitwirken.
                 </p>
             </v-col>
             <v-col>
@@ -30,10 +23,9 @@
                 </v-card>
             </v-col>
             <v-container class="container">
-                 <ProgrammiersprachenComponent/>
+                <ProgrammiersprachenComponent/>
                 <CardComponent/>
             </v-container>
-           
         </v-row>
     </v-container>
 </template>

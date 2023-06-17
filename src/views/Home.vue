@@ -1,14 +1,13 @@
 <template>
-  <header class="ma-16">
+  <header>
     <HeaderComponent />
   </header>
- <section class="ma-16">
+ <section>
     <TimeLine />
  </section>
-  <main class="ma-16">
+  <main class="ml-16 mr-16">
      <ProjekteImg/>
   </main>
- 
 </template>
 <script>
 import TimeLine from '@/components/TimeLine.vue';
@@ -24,4 +23,9 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+section{
+  background-color: #2c3439;
+}
+
+</style>
