@@ -3,7 +3,6 @@
         <v-row class="mt-16 pt-11">
             <v-col cols="12" md="8">
                 <v-col class="d-flex justify-center align-center">
-                    <v-icon class="icon" icon="mdi-account"></v-icon>
                     <h1>Über mich
                         <hr>
                     </h1>
