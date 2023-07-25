@@ -1,11 +1,11 @@
 <template>
       <div id="nav">
         <img alt="jpe logo" src="../assets/logo.png">
-        <ul> 
+        <!-- <ul> 
           <li class="nav-link"><a  @click="scrollToSection('#section1')" class="active" >Über mich</a></li>
           <li class="nav-link"><a  @click="scrollToSection('#section2')"> Werdegang & Zeugnis</a></li>
           <li class="nav.link"><a  @click="scrollToSection('#section3')">Projekte</a></li> 
-        </ul>
+        </ul> -->
       </div>
       <router-view/>
 </template>
